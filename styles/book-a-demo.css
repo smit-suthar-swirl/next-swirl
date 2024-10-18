@@ -1,0 +1,78 @@
+/* html{
+  scroll-behavior: smooth;
+  }
+   */
+ .bad-accordion::after {
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .bad-accordion:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M5 11h14v2H5z'/%3E%3C/svg%3E");
+   }
+
+   .bad2-accordion::after {
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .bad2-accordion:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M5 11h14v2H5z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+   }
+
+ .activediv {
+  background-color: #FF4800;
+}
+
+.inactivediv {
+  border-color: #e8e4dc;
+}
+
+#form-content2 {
+  background-color: #FFDDCC;
+}
+
+#country-code .css-13cymwt-control {
+  border-width: 0px;
+  border-style: none;
+  border-color: black;
+}
+#country-code .css-t3ipsp-control{
+  border-color: #fff;
+  box-shadow: none;
+}
+#country-code .css-t3ipsp-control:hover {
+border-color: #fff;
+}
+
+#country-code .css-13cymwt-control .css-1fdsijx-ValueContainer  {
+  padding: 0px;
+}
+
+#country-code .css-13cymwt-control .css-1hb7zxy-IndicatorsContainer .css-1xc3v61-indicatorContainer{
+  padding: 0px;
+}
+
+#successfulsigned{
+  color: green
+}
+
+#error-message{
+  color: red;
+}

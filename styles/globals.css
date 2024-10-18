@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "CircularStd";
+    src: url("/fonts/CircularStd-Light.woff2") format("woff2"),
+      url("/fonts/CircularStd-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "CircularStd-book";
+    src: url("/fonts/CircularStd-Book.woff2") format("woff2"),
+      url("/fonts/CircularStd-Book.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "CircularStd";
+    src: url("/fonts/CircularStd-Medium.woff2") format("woff2"),
+      url("/fonts/CircularStd-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "CircularStd";
+    src: url("/fonts/CircularStd-Bold.woff2") format("woff2"),
+      url("/fonts/CircularStd-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "CircularStd";
+    src: url("/fonts/CircularStd-Black.woff2") format("woff2"),
+      url("/fonts/CircularStd-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+body {
+  font-family: CircularStd, sans-serif;
+}
+
+li {
+  font-family: CircularStd-book, sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: #15160e;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.blurred {
+  backdrop-filter: blur(30px);
+  background-color: rgba(21, 22, 14, .5);
+}
+
+/* .nav-arrows:hover {
+  transform: rotate(45deg);
+  transition: transform 0.3s ease-in-out;
+} */
+.mySwiper .swiper-slide {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  align-self: center;
+}
+
+.footer:hover {
+  color: #777471;
+}
+
+.active {
+  border-color: #131111;
+}
+
+.inactive {
+  border-color: #e8e4dc;
+}
+
+.elementor-element-58613ce8 {
+  display: none;
+}
+
+.elementor-element-74ba3e8,
+.elementor-element-6973d16,
+.elementor-element-982b393,
+.elementor-element-49ef2ed,
+.elementor-element-1af787b {
+  padding: 5rem 0 5rem 0;
+}
+
+.arrow-case-studies {
+  transform: rotate(180deg)
+}
+
+table tr td,
+th {
+  width: 25%;
+  text-align: left;
+  padding: 24px;
+}
+
+#check {
+  background-color: #131111;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+/* #metrics-section{
+  background-image: url("../public/assets/images/index-live-ecommerce-power.png");
+  object-fit: contain;
+  background-position: 20px;
+} */
+
+.arrow-right {
+  border: 2px solid #131111;
+  border-radius: 15px;
+  padding: 6px;
+  align-items: center;
+  transition: transform 0.8s;
+  /* transition: margin-right 1s ease-in-out; */
+}
+
+
+.arrow-right:hover {
+  /* transition: transform 1s ease-in-out margin-right; */
+  transform: rotate(-45deg)
+    /* margin-right: 6px; */
+}
+
+#arrow-right-case-study {
+  border: 2px solid #131111;
+  border-radius: 15px;
+  padding: 6px;
+  /* @media only screen and (min-width: 768px) and (max-width: 1440px){
+    padding: 12px;
+    } */
+  align-items: center;
+  transition: margin-right 1s;
+}
+
+#arrow-right-case-study:hover {
+  background-color: #8e6fb9;
+  margin-right: 8px;
+}
+
+#arrow-right-case-study-comp {
+  border: 2px solid #131111;
+  border-radius: 15px;
+  padding: 6px;
+  align-items: center;
+  /* transition: margin-right 1s; */
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  padding-bottom: 20px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: black;
+}
+
+#pricing-header-section {
+  background: linear-gradient(180deg, #f7f7ee 0%, #f7f7ee 10.65%, white 10.5%, white 26%, #f7f7ee 25%, #f7f7ee 100%, white 100%, white 0%);
+}
+
+@media only screen and (max-width: 768px) {
+  #pricing-header-section {
+    background: #f7f7ee;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 769px) {
+  #pricing-header-section {
+    background: linear-gradient(180deg, #f7f7ee 0%, #f7f7ee 10.05%, white 10.05%, white 26%, #f7f7ee 25%, #f7f7ee 100%, white 100%, white 0%);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #pricing-header-section {
+    background: linear-gradient(180deg, #f7f7ee 0%, #f7f7ee 10.65%, white 10.5%, white 26%, #f7f7ee 25%, #f7f7ee 100%, white 100%, white 0%);
+  }
+}
